@@ -25,7 +25,7 @@ before_script:
 
 script:
   - pipenv run flake8 .
-  - pipenv run pytest # --cov=controledental
+  - pipenv run pytest --cov=djangoaulas
 
-#after_success:
-#  - pipenv run codecov
+after_success:
+  - pipenv run codecov
