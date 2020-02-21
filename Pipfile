@@ -8,6 +8,7 @@ flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
+django-debug-toolbar = "*"
 
 [packages]
 django = "*"
