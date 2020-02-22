@@ -28,30 +28,6 @@
     </button>
 </nav>
 {% block body %}{% endblock body %}
-<footer class="main-footer mt-5 pt-4 text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Entre em contato</h3>
-                <address>
-                    <a href="tel:+5537988323652" class="text-light">+55 37 98832-3652</a>
-                    <br/>
-                    <a href="mailto:joao@joao.com.br" class="text-light">joao@joao.com.br</a>
-                </address>
-            </div>
-
-        </div>
-    </div>
-    <div class="rights pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    {% now 'Y' %} Django aulas. Todos os direitos reservados
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
+{% include 'base/footer.html' with contato_email='joao@joao.com.br' only %}
 </body>
 </html>
