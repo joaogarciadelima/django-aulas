@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'collectfast',
     'django.contrib.staticfiles',
     'djangoaulas.base',
+    'djangoaulas.aperitivos',
 ]
 
 MIDDLEWARE = [
