@@ -21,3 +21,7 @@ def test_title(resp):
 
 def test_home_link(resp):
     assert_contains(resp, f'href="{reverse("base:home")}">Django Aulas</a>')
+
+
+def test_email_link(resp):
+    assert_contains(resp, f'href="mailto:joao@joao.com.br"')
