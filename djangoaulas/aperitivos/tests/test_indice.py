@@ -16,7 +16,7 @@ def resp(client, videos):
     return client.get(reverse('aperitivos:indice'))
 
 
-def test_status_code(resp):
+def test_status_code(resp, db):
     assert resp.status_code == 200
 
 

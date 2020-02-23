@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('djangoaulas.base.urls')),
     path('aperitivos/', include('djangoaulas.aperitivos.urls')),
+    path('modulos/', include('djangoaulas.modulos.urls')),
 ]
 
 
