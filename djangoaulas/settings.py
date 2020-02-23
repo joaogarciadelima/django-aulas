@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'djangoaulas.aperitivos',
     'djangoaulas.modulos',
     'ordered_model',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

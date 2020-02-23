@@ -21,6 +21,8 @@ django-s3-folder-storage = "*"
 sentry-sdk = "*"
 collectfast = "*"
 django-ordered-model = "*"
+django-extensions = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.8"
