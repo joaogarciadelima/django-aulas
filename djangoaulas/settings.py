@@ -38,6 +38,8 @@ AUTH_USER_MODEL = 'base.User'
 
 # Application definition
 
+COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
