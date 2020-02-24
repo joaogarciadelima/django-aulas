@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'djangoaulas.base',
     'djangoaulas.aperitivos',
     'djangoaulas.modulos',
+    'djangoaulas.turmas',
     'ordered_model',
     'django_extensions',
 ]
