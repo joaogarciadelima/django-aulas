@@ -20,10 +20,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('contas/', include('django.contrib.auth.urls')),
     path('', include('djangoaulas.base.urls')),
     path('aperitivos/', include('djangoaulas.aperitivos.urls')),
     path('modulos/', include('djangoaulas.modulos.urls')),
     path('turmas', include('djangoaulas.turmas.urls')),
+
 ]
 
 
