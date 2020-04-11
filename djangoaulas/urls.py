@@ -16,11 +16,21 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth.views import (
+    LoginView, LogoutView, PasswordResetCompleteView, PasswordResetConfirmView,
+    PasswordResetDoneView, PasswordResetView,
+)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contas/', include('django.contrib.auth.urls')),
+    path('contas/login/', LoginView.as_view(), name='login'),
+    path('contas/logout/', LogoutView.as_view(), name='logout'),
+    path('contas/reiniciar_senha/', PasswordResetView.as_view(), name='password_reset'),
+    path('contas/reiniciar_senha/ok', PasswordResetDoneView.as_view(), name='password_reset_done'),
+    path('contas/reiniciar/<uidb64>/<token>/', PasswordResetConfirmView.as_view(),
+         name='password_reset_confirm'),
+    path('contas/reiniciar/ok', PasswordResetCompleteView.as_view(), name='password_reset_complete'),
     path('', include('djangoaulas.base.urls')),
     path('aperitivos/', include('djangoaulas.aperitivos.urls')),
     path('modulos/', include('djangoaulas.modulos.urls')),
