@@ -23,6 +23,7 @@ collectfast = "*"
 django-ordered-model = "*"
 django-extensions = "*"
 ipython = "*"
+sendgrid = "*"
 
 [requires]
 python_version = "3.8"

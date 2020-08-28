@@ -45,6 +45,10 @@ LOGIN_REDIRECT_URL = LOGOUT_REDIRECT_URL = '/'
 COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 INSTALLED_APPS = [
+    'djangoaulas.base',
+    'djangoaulas.aperitivos',
+    'djangoaulas.modulos',
+    'djangoaulas.turmas',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,10 +56,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'djangoaulas.base',
-    'djangoaulas.aperitivos',
-    'djangoaulas.modulos',
-    'djangoaulas.turmas',
     'ordered_model',
     'django_extensions',
 ]
@@ -90,6 +90,16 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djangoaulas.wsgi.application'
+
+
+# Configuração de envio de Email
+
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 
 # DJANGO DEBUG TOOLBAR
 
