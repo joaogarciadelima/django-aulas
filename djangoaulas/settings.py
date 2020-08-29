@@ -94,7 +94,6 @@ WSGI_APPLICATION = 'djangoaulas.wsgi.application'
 
 # Configuração de envio de Email
 
-EMAIL_BACKEND = config('EMAIL_BACKEND')
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
@@ -108,6 +107,7 @@ INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
 if DEBUG:
     INSTALLED_APPS.append('debug_toolbar')
     MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
+    EMAIL_BACKEND = config('EMAIL_BACKEND')
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
