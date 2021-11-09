@@ -292,9 +292,9 @@
         },
         "starkbank-ecdsa": {
             "hashes": [
-                "sha256:cd17ec9fa7ad8ae3fc81a63ddb7e0d7fb798a048e40c1a9c55afd1a207d1eff9"
+                "sha256:4b60ebc493f024f2891516a6c140fcc711c16999468c8594bc1097ca5aed759f"
             ],
-            "version": "==1.0.0"
+            "version": "==2.0.2"
         },
         "traitlets": {
             "hashes": [
