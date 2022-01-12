@@ -263,11 +263,10 @@
         },
         "sendgrid": {
             "hashes": [
-                "sha256:145436de333ad4c38ea4b697db820de6e1ba70bf3a4aecc88818758438e25fcb",
-                "sha256:904dbfe2e0da2bf07f51202af837cac029b160a829e041e1972da2489a928d3b"
+                "sha256:40653ec7a1ca889398ed6aadba480ae6ab73b9f4329ad841ef4d2bd81848cf62",
+                "sha256:f0faa12189e85962651ec1062f6a53e7b0272c452e721a8f4d6847cddad9cfa8"
             ],
-            "index": "pypi",
-            "version": "==6.4.6"
+            "version": "==6.9.4"
         },
         "sentry-sdk": {
             "hashes": [
