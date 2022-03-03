@@ -137,10 +137,10 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:4dbacf73ac7409c33c918044476eefe4c2428ce0ca4cc118aee718ac6026ac0f",
-                "sha256:73c61ebcc30baadf600b870c3a38b96d6e5ae8dde5ef5425b8aab75dc9a9a602"
+                "sha256:6f56bfaeaa3247aa3b9cd3b8cbab3a9c0abf7428392f97b21902d12b2f42a381",
+                "sha256:8138762243c9b3a3ffcf70b37151a2a35c23d3a29f9743878c33624f4207be3d"
             ],
-            "version": "==7.18.0"
+            "version": "==8.1.1"
         },
         "ipython-genutils": {
             "hashes": [
