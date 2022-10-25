@@ -60,12 +60,8 @@
             "version": "==2.2.0"
         },
         "colorama": {
-            "hashes": [
-                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
-                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
-            ],
-            "markers": "sys_platform == 'win32'",
-            "version": "==0.4.3"
+            "hashes": [],
+            "version": "==0.4.6"
         },
         "decorator": {
             "hashes": [
@@ -373,12 +369,8 @@
             "version": "==2.1.9"
         },
         "colorama": {
-            "hashes": [
-                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
-                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
-            ],
-            "markers": "sys_platform == 'win32'",
-            "version": "==0.4.3"
+            "hashes": [],
+            "version": "==0.4.6"
         },
         "coverage": {
             "hashes": [
